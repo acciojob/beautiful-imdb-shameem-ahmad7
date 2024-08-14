@@ -1,16 +1,66 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
 
+        .movie-container {
+            text-align: center;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .moviePic {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+
+        .moviePic:hover {
+            opacity: 1;
+        }
+
+        .movieDetail {
+            position: relative;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="movie-container">
+    <img src="movie-poster.jpg" alt="Movie Poster" class="moviePic">
+    <p class="movieDetail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum vehicula magna at facilisis. Nullam non metus ac sem sodales cursus vel non sapien.</p>
+</div>
 
 </body>
-
 </html>
+
